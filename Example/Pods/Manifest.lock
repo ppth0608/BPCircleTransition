@@ -1,0 +1,16 @@
+PODS:
+  - BPCircleTransition (0.1.0)
+
+DEPENDENCIES:
+  - BPCircleTransition (from `../`)
+
+EXTERNAL SOURCES:
+  BPCircleTransition:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BPCircleTransition: cead55d3e76c70b61789acb2f3368865f7ffe174
+
+PODFILE CHECKSUM: c4f6e60aefdffc0de48b32305ea47073e2539afd
+
+COCOAPODS: 1.2.0.beta.3

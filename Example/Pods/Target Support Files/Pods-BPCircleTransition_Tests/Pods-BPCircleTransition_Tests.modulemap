@@ -1,0 +1,6 @@
+framework module Pods_BPCircleTransition_Tests {
+  umbrella header "Pods-BPCircleTransition_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

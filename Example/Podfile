@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BPCircleTransition_Example' do
+  pod 'BPCircleTransition', :path => '../'
+
+  target 'BPCircleTransition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

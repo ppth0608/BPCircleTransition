@@ -1,0 +1,6 @@
+framework module BPCircleTransition {
+  umbrella header "BPCircleTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}
