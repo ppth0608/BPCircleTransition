@@ -22,7 +22,7 @@ pod "BPCircleTransition"
 
 ## Author
 
-taehyun.park, taehyun.park@navercorp.com
+Ben.park, ppth0608@naver.com
 
 ## License
 
