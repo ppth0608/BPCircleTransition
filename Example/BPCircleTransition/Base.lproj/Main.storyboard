@@ -1,25 +1,89 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BPCircleTransition_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXm-EG-K0e">
+                                <rect key="frame" x="275" y="567" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.73725490199999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3gK-zr-wJk"/>
+                                    <constraint firstAttribute="height" constant="50" id="y32-Bs-C2J"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C3z-kT-caR" kind="custom" identifier="circleTransition" customClass="BPCircleTransitionSegue" customModule="BPCircleTransition" id="96h-4K-UiE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="sXm-EG-K0e" secondAttribute="bottom" constant="50" id="d1v-EL-yrx"/>
+                            <constraint firstAttribute="trailing" secondItem="sXm-EG-K0e" secondAttribute="trailing" constant="50" id="te3-HN-mdm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="sXm-EG-K0e" id="SF0-2E-JVg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GES-cr-GHC">
+            <objects>
+                <viewController id="C3z-kT-caR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T1A-io-IQo"/>
+                        <viewControllerLayoutGuide type="bottom" id="E1U-NC-vcV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tc5-Rd-fn5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJU-hT-yhg">
+                                <rect key="frame" x="295" y="28" width="64" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="36H-KN-DRM"/>
+                                    <constraint firstAttribute="height" constant="50" id="sfX-IZ-bNf"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="AGB-6A-ZGl" kind="unwind" identifier="unwind" customClass="BPCircleTransionUnwindSegue" customModule="BPCircleTransition" unwindAction="unwindToViewControllerWithSegue:" id="47J-w5-FVI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.74509803919999995" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uJU-hT-yhg" secondAttribute="trailing" constant="16" id="gOe-Dl-dic"/>
+                            <constraint firstItem="uJU-hT-yhg" firstAttribute="top" secondItem="T1A-io-IQo" secondAttribute="bottom" constant="8" id="pwx-ls-t6e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUO-Zz-ZYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AGB-6A-ZGl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

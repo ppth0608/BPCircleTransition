@@ -11,11 +11,13 @@
 		1B1B9E21BDDF5B9871550A5ED687E197 /* Pods-BPCircleTransition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D52364168B5A7DCD84418E540D9D241F /* Pods-BPCircleTransition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2287F942867EDECBF24B044BB1D0BD22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3CF48429C760B03F11D54EE3208DD2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4AFC951B1E1E8C0F005DECCD /* BPCircleTransitionSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC951A1E1E8C0F005DECCD /* BPCircleTransitionSegue.swift */; };
+		4AFC951E1E1EAC07005DECCD /* BPCircleTransionUnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC951D1E1EAC07005DECCD /* BPCircleTransionUnwindSegue.swift */; };
+		4AFC95201E1EACE1005DECCD /* ViewControllerContainBPCircleTransion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC951F1E1EACE1005DECCD /* ViewControllerContainBPCircleTransion.swift */; };
 		92CBDFD0511BCFA0ECFFD251311B9DA6 /* BPCircleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A95E2AF4D5EDEB6ED1552313C96A479 /* BPCircleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E18B8B79D886A771FC37DBFA9F153F8 /* Pods-BPCircleTransition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B18414EB11181A3F96205C544CEA6A1 /* Pods-BPCircleTransition_Tests-dummy.m */; };
 		B6F7ACDEDC64535B3AA74C53E8CD948F /* Pods-BPCircleTransition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41924F195D903D1A9819A05737643A0F /* Pods-BPCircleTransition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8D35C90B0F9693D91D0716AA7850BE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C1630C1B8D9E569696A598841180647C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ACFCC0DCAB408F9EE8759290D649B /* ReplaceMe.swift */; };
 		EF65149DD5E5334D38EAF296EED4AECE /* BPCircleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C350B5E52E38F39FCC0990C0C9791B /* BPCircleTransition-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,9 @@
 		3EEA9DBE07AFFAF115C8E7D7D1D47911 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4016D943243260E642AD4547E3D3EF08 /* Pods-BPCircleTransition_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BPCircleTransition_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		41924F195D903D1A9819A05737643A0F /* Pods-BPCircleTransition_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BPCircleTransition_Example-umbrella.h"; sourceTree = "<group>"; };
+		4AFC951A1E1E8C0F005DECCD /* BPCircleTransitionSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPCircleTransitionSegue.swift; sourceTree = "<group>"; };
+		4AFC951D1E1EAC07005DECCD /* BPCircleTransionUnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPCircleTransionUnwindSegue.swift; sourceTree = "<group>"; };
+		4AFC951F1E1EACE1005DECCD /* ViewControllerContainBPCircleTransion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerContainBPCircleTransion.swift; sourceTree = "<group>"; };
 		6FA27538756AD970F3D641C84DF8C19E /* Pods-BPCircleTransition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPCircleTransition_Example.release.xcconfig"; sourceTree = "<group>"; };
 		714E45E8652A851E6791356F72907DD9 /* Pods-BPCircleTransition_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPCircleTransition_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7267EFAA46CDFB93F5A5B48D0FC326D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +53,6 @@
 		90DB86FEF659D911D3657571E33422E7 /* Pods-BPCircleTransition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPCircleTransition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		961E4D5B6FF48C8EFA71583DE93E6F6A /* Pods-BPCircleTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPCircleTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9A1ACFCC0DCAB408F9EE8759290D649B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		9B18414EB11181A3F96205C544CEA6A1 /* Pods-BPCircleTransition_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BPCircleTransition_Tests-dummy.m"; sourceTree = "<group>"; };
 		AB65BD9E102DD465BF476D2C859057A1 /* Pods-BPCircleTransition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BPCircleTransition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B209F7FC0544882F6CEA16CB6D448030 /* Pods-BPCircleTransition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BPCircleTransition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -140,7 +144,9 @@
 		4015BB2C66A447BB4CE1952CD4539351 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9A1ACFCC0DCAB408F9EE8759290D649B /* ReplaceMe.swift */,
+				4AFC951F1E1EACE1005DECCD /* ViewControllerContainBPCircleTransion.swift */,
+				4AFC951A1E1E8C0F005DECCD /* BPCircleTransitionSegue.swift */,
+				4AFC951D1E1EAC07005DECCD /* BPCircleTransionUnwindSegue.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -353,8 +359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFC951E1E1EAC07005DECCD /* BPCircleTransionUnwindSegue.swift in Sources */,
 				EF65149DD5E5334D38EAF296EED4AECE /* BPCircleTransition-dummy.m in Sources */,
-				C1630C1B8D9E569696A598841180647C /* ReplaceMe.swift in Sources */,
+				4AFC951B1E1E8C0F005DECCD /* BPCircleTransitionSegue.swift in Sources */,
+				4AFC95201E1EACE1005DECCD /* ViewControllerContainBPCircleTransion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
