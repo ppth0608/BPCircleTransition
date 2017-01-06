@@ -53,7 +53,7 @@ class BPCircleTransitionSegue: UIStoryboardSegue, UIViewControllerTransitioningD
             
             let animation = CABasicAnimation(keyPath: "path")
             animation.fromValue = UIBezierPath(ovalIn: beginFrame.offsetBy(dx: 0, dy: 0)).cgPath
-            animation.toValue = UIBezierPath(ovalIn: beginFrame.offsetBy(dx: -radius, dy: -radius)).cgPath
+            animation.toValue = UIBezierPath(ovalIn: beginFrame.insetBy(dx: -radius, dy: -radius)).cgPath
             animation.fillMode = kCAFillModeForwards
             animation.isRemovedOnCompletion = false
             

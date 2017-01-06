@@ -54,13 +54,13 @@ class BPCircleTransionUnwindSegue: UIStoryboardSegue, UIViewControllerTransition
             let radius = max(beginFrame.width, beginFrame.height)
             
             let animation = CABasicAnimation(keyPath: "path")
-            animation.fromValue = UIBezierPath(ovalIn: beginFrame.offsetBy(dx: -radius, dy: -radius)).cgPath
+            animation.fromValue = UIBezierPath(ovalIn: beginFrame.insetBy(dx: -radius, dy: -radius)).cgPath
             animation.toValue = UIBezierPath(ovalIn: endFrame.offsetBy(dx: 0, dy: 0)).cgPath
             animation.fillMode = kCAFillModeForwards
             animation.isRemovedOnCompletion = false
             
-            toView.layer.mask = CAShapeLayer()
-            toView.layer.mask?.add(animation, forKey: "MaskAnimation")
+            fromView.layer.mask = CAShapeLayer()
+            fromView.layer.mask?.add(animation, forKey: "MaskAnimation")
         }
         
         CATransaction.commit()
