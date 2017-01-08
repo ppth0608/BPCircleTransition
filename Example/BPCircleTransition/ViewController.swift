@@ -13,7 +13,7 @@ class ViewController: UIViewController, ViewControllerContainCircleTransition {
 
     @IBOutlet weak var button: UIButton!
     
-    var circleTransitionTriggerButton: UIButton? {
+    var circleTransitionTriggerView: UIView? {
         if let button = button {
             return button
         }

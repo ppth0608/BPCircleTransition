@@ -9,5 +9,6 @@
 import Foundation
 
 public protocol ViewControllerContainCircleTransition {
-    var circleTransitionTriggerButton: UIButton? { get }
+    
+    var circleTransitionTriggerView: UIView? { get }
 }

@@ -39,15 +39,15 @@ class BPCircleTransitionSegue: UIStoryboardSegue, UIViewControllerTransitioningD
             transitionContext.view(forKey: .to)?.layer.mask = nil
         }
         
-        var transitionCreateButton: UIView!
+        var transitionCreateView: UIView!
         if let source = source as? ViewControllerContainCircleTransition {
-            transitionCreateButton = source.circleTransitionTriggerButton
+            transitionCreateView = source.circleTransitionTriggerView
         } else {
-            transitionCreateButton = UIView()
+            transitionCreateView = UIView()
         }
         
-        if let superView = transitionCreateButton.superview {
-            let beginFrame = fromView.convert(transitionCreateButton.frame, from: superView)
+        if let superView = transitionCreateView.superview {
+            let beginFrame = fromView.convert(transitionCreateView.frame, from: superView)
             let endFrame = transitionContext.finalFrame(for: toViewController)
             let radius = max(endFrame.width, endFrame.height)
             

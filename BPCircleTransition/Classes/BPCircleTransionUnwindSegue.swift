@@ -13,7 +13,7 @@ class BPCircleTransionUnwindSegue: UIStoryboardSegue, UIViewControllerTransition
     
     override func perform() {
         if let navigationController = source.navigationController {
-            source.navigationController?.transitioningDelegate = self
+            navigationController.transitioningDelegate = self
         } else {
             source.transitioningDelegate = self
         }
@@ -41,16 +41,16 @@ class BPCircleTransionUnwindSegue: UIStoryboardSegue, UIViewControllerTransition
             transitionContext.view(forKey: .from)?.layer.mask = nil
         }
         
-        var transitionCreateButton: UIView!
+        var transitionCreateView: UIView!
         if let source = destination as? ViewControllerContainCircleTransition {
-            transitionCreateButton = source.circleTransitionTriggerButton
+            transitionCreateView = source.circleTransitionTriggerView
         } else {
-            transitionCreateButton = UIView()
+            transitionCreateView = UIView()
         }
         
-        if let superView = transitionCreateButton.superview {
+        if let superView = transitionCreateView.superview {
             let beginFrame = transitionContext.initialFrame(for: fromViewController)
-            let endFrame = toView.convert(transitionCreateButton.frame, from: superView)
+            let endFrame = toView.convert(transitionCreateView.frame, from: superView)
             let radius = max(beginFrame.width, beginFrame.height)
             
             let animation = CABasicAnimation(keyPath: "path")
